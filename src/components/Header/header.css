@@ -1,0 +1,25 @@
+header{
+    background-color: var(--grey);
+    width: 100vw;
+    display: flex;
+}
+
+.header--logo{
+    display: flex;
+    align-items: center;
+}
+
+.header--img{
+    width: 7vw;
+}
+
+.logo--text{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+}
+
+.header--company-name{
+    font-size: 3vh;
+    font-weight: 300;
+}
