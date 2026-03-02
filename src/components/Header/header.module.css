@@ -1,0 +1,136 @@
+.topHeader{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hours{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 3vw;
+    color: var(--dark-blue);
+}
+
+.info{
+    margin-left: auto;  
+    display: flex;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 5vw;
+    color: var(--gren);
+}
+
+.strongAddress{
+    color: var(--dark-blue);
+}
+
+.email{
+    background-color: var(--cyan);
+    color: var(--white);
+    padding: 1vh 5vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 700;
+}
+
+.bottomHeader {
+    display: flex;
+    background-color: var(--cyan);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 3vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottomHeader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 60%;
+    height: 100%;
+    width: 5%;
+    background-color: #2aa7d6; /* azul mais claro */
+    clip-path: polygon(0 0, 0% 0, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+
+.bottomHeader::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background-color: var(--blue); 
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 20% 100%);
+    z-index: 0;
+}
+
+.bottomHeader > * {
+    position: relative;
+    z-index: 1;
+}
+
+.img{
+    height: 8vh;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 0 3vw;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 0 3vw;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+}
+
+.numberSpan{
+    color: var(--white);
+}
+
+.strongSpan{
+    color: var(--gren);
+    text-decoration: underline;
+}
+
+.spanQuote{
+    background-color: var(--cyan);
+    padding: 1vw;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
