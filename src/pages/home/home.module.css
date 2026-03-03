@@ -10,10 +10,12 @@
 .span{
     color: var(--white);
     background-color: var(--green);
-    font-size: 18px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 10px;
     border-radius: 25px;
     width: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .h3{
@@ -158,11 +160,12 @@
     color: var(--grey);
 }
 
-.status{
+.containerStatus{
     display: flex;
     width: 100%;
     justify-content: center;
     padding: 10vh 0;
+    margin: 10vh 0;
 
     background-image: url("/imgs/StatusBackground.png");
     background-size: cover;
@@ -187,4 +190,194 @@
 
 .statusCardText{
     font-size: 18px;
+}
+
+.containerServices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.servicesCards {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding: 8vh 5vw;
+    flex-wrap: wrap;
+}
+
+.serviceCard {
+    width: 350px;
+    position: relative;
+}
+
+.serviceImage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.serviceContent {
+    background: var(--white);
+    width: 85%;
+    margin: -80px auto 0 auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceTag {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--green);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.serviceContent h4 {
+    font-size: 22px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.serviceContent p {
+    color: var(--grey);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.serviceButton {
+    position: relative;
+    overflow: hidden;
+    margin-top: 3vh;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--blue);
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    padding: 15px;
+    border-radius: 14px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.serviceButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: 0.6s;
+}
+
+.serviceButton:hover::before {
+    left: 100%;
+}
+
+.serviceButton:hover {
+    transform: translateY(-6px);
+}
+
+.containerMeet{
+    display: flex;
+    margin: 15vh 0;
+}
+
+.meetImage{
+    width: 50%;
+    text-align: center;
+}
+
+.imageMeet{
+    width: 60%;
+}
+
+.meetText{
+    width: 50%;
+}
+
+.containerSpan{
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 2vh 0;
+}
+
+.spanMeet{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.line{
+    width: 80px;
+    height: 6px;
+    background: var(--blue);
+}
+
+.h3Meet{
+    font-size: 48px;
+    width: 70%;
+    margin: 2vh 0;
+}
+
+.pMeet{
+    font-size: 24px;
+    color: var(--grey);
+    width: 65%;
+    margin: 2vh 0;
+}
+
+.linkMeet {
+    position: relative;
+    overflow: hidden;
+    margin-top: 3vh;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1.5vh 2vw;
+    border-radius: 14px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.linkMeet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: 0.6s;
+}
+
+.linkMeet:hover::before {
+    left: 100%;
+}
+
+.linkMeet:hover {
+    transform: translateY(-6px);
 }

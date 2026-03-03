@@ -53,7 +53,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className={styles.status}>
+            <div className={styles.containerStatus}>
                 <div className={styles.statusCard}>
                     <span className={styles.statusCardTitle}>50+</span>
                     <span className={styles.statusCardText}>Satisfied Customers</span>
@@ -69,6 +69,75 @@ export const Home = () => {
                 <div className={styles.statusCard}>
                     <span className={styles.statusCardTitle}>650K+ Miles</span>
                     <span className={styles.statusCardText}>Fiber Infrastructure Built</span>
+                </div>
+            </div>
+
+            <div className={styles.containerServices}>
+                <span className={styles.span}>Our Services</span>
+                <h3 className={styles.h3}>Our Infrastructure Services</h3>
+                <p className={styles.pCompanies}>Magellan Group provides a wide range of infrastructure solutions designed to support telecommunications and underground utility networks across the United States.</p>
+            </div>
+
+            <div className={styles.servicesCards}>
+                <div className={styles.serviceCard}>
+                    <div className={styles.serviceImage}>
+                        <img src="/imgs/FiberPulling.png" alt="Fiber Pulling" />
+                    </div>
+
+                    <div className={styles.serviceContent}>
+                        <span className={styles.serviceTag}>SERVICES</span>
+                        <h4>Fiber Pulling</h4>
+                        <p>Professional installation of fiber optic cables</p>
+                        <Link to="/contact" className={styles.serviceButton}>
+                            Read More
+                        </Link>
+                    </div>
+                </div>
+
+                <div className={styles.serviceCard}>
+                    <div className={styles.serviceImage}>
+                        <img src="/imgs/DirectionalDrilling.png" alt="Directional Drilling" />
+                    </div>
+
+                    <div className={styles.serviceContent}>
+                        <span className={styles.serviceTag}>SERVICES</span>
+                        <h4>Directional Drilling</h4>
+                        <p>Trenchless drilling solutions for underground utilities</p>
+                        <Link to="/contact" className={styles.serviceButton}>
+                            Read More
+                        </Link>
+                    </div>
+                </div>
+
+                <div className={styles.serviceCard}>
+                    <div className={styles.serviceImage}>
+                        <img src="/imgs/SplicingTesting.png" alt="Splicing & Testing" />
+                    </div>
+
+                    <div className={styles.serviceContent}>
+                        <span className={styles.serviceTag}>SERVICES</span>
+                        <h4>Splicing & Testing</h4>
+                        <p>High-precision fiber splicing and network testing</p>
+                        <Link to="/contact" className={styles.serviceButton}>
+                            Read More
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.containerMeet}>
+                <div className={styles.meetImage}>
+                    <img src="./imgs/Meet.png" alt="" className={styles.imageMeet}/>
+                </div>
+                <div className={styles.meetText}>
+                    <div className={styles.containerSpan}>
+                        <span className={styles.spanMeet}>MEET THE LEADERS</span>
+                        <div className={styles.line}></div>
+                    </div>
+                    
+                    <h3 className={styles.h3Meet}>Discover Our Experienced Team Of Head Infrastructure Business </h3>
+                    <p className={styles.pMeet}>Our team brings together engineers, technicians, and infrastructure specialists with years of combined experience in telecommunications and underground construction.</p>
+                    <Link to="/about" className={styles.linkMeet}>Meet our leaders</Link>
                 </div>
             </div>
         </>
