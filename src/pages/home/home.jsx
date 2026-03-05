@@ -1,12 +1,19 @@
-import { Banner } from "../../components/Banner"
-
 import { Link } from "react-router-dom";
 import styles from './home.module.css'
 
 export const Home = () => {
     return (
         <>
-            <Banner />
+            <div className={styles.container}>
+                <div className={styles.text}>
+                    <span className={styles.spanBanner}>• Magellan Group •</span>
+                    <h1 className={styles.h1}>Building the Future of Utility Infrastructure</h1>
+                    <p className={styles.pBanner}>We deliver reliable solutions with safety, efficiency, and excellence in every project.</p>
+                    <Link to="/contact" className={styles.linkBanner}>Contact Us</Link>
+                </div>
+
+            </div>
+            
             <div className={styles.containerCompanies}>
                 <span className={styles.span}>Our Services</span>
                 <h3 className={styles.h3}>Our Companies</h3>
@@ -127,17 +134,28 @@ export const Home = () => {
 
             <div className={styles.containerMeet}>
                 <div className={styles.meetImage}>
-                    <img src="./imgs/Meet.png" alt="" className={styles.imageMeet}/>
+                    <img src="./imgs/Meet.png" alt="" className={styles.imageMeet} />
                 </div>
                 <div className={styles.meetText}>
                     <div className={styles.containerSpan}>
                         <span className={styles.spanMeet}>MEET THE LEADERS</span>
                         <div className={styles.line}></div>
                     </div>
-                    
+
                     <h3 className={styles.h3Meet}>Discover Our Experienced Team Of Head Infrastructure Business </h3>
                     <p className={styles.pMeet}>Our team brings together engineers, technicians, and infrastructure specialists with years of combined experience in telecommunications and underground construction.</p>
                     <Link to="/about" className={styles.linkMeet}>Meet our leaders</Link>
+                </div>
+            </div>
+
+            <div className={styles.containerTimelineText}>
+                <div className={styles.containerTimelineInfo}>
+                    <img src="./imgs/Logo Magellan Group.png" alt="" className={styles.imgLogoTimeline}/>
+                    <img src="./imgs/Titulo.png" alt="" className={styles.imgTitleTimeline}/>
+                    <p className={styles.pTimeline}>The creation of Magellan Group allowed businesses and communities to build the future together, just as its founders had always envisioned. This is the story of how their union revolutionized the infrastructure and construction sector in Florida.</p>
+                </div>
+                <div>
+                    <img src="./imgs/Foto.png" alt="" className={styles.timelineImg}/>
                 </div>
             </div>
         </>
