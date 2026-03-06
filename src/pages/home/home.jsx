@@ -152,10 +152,78 @@ export const Home = () => {
                 <div className={styles.containerTimelineInfo}>
                     <img src="./imgs/Logo Magellan Group.png" alt="" className={styles.imgLogoTimeline}/>
                     <img src="./imgs/Titulo.png" alt="" className={styles.imgTitleTimeline}/>
-                    <p className={styles.pTimeline}>The creation of Magellan Group allowed businesses and communities to build the future together, just as its founders had always envisioned. This is the story of how their union revolutionized the infrastructure and construction sector in Florida.</p>
+                    <p className={styles.pTimelineTitle}>The creation of Magellan Group allowed businesses and communities to build the future together, just as its founders had always envisioned. This is the story of how their union revolutionized the infrastructure and construction sector in Florida.</p>
                 </div>
                 <div>
                     <img src="./imgs/Foto.png" alt="" className={styles.timelineImg}/>
+                </div>
+            </div>
+
+            <div className={styles.timeline1}>
+                <div className={styles.timelineCard1}>
+                    <div>
+                        <img src="./imgs/AMT.png" alt="" className={styles.timelineImage1}/>
+                    </div>
+                    <div className={styles.timelineCard1Container2}>
+                        <h4 className={styles.h4Timeline}>THE BEGGINING <br /><span className={styles.spanTimeline}>OF EVERYTHING</span></h4>
+                        <p className={styles.pTimeline}>In 2020, AMT Fiber Solutions was founded in Orlando, Florida, starting as a small fiber pulling company operating with a single machine and working with a single prime contractor. Despite the modest beginning, the company was built on strong principles of reliability, efficiency, and commitment to quality service in the telecommunications infrastructure sector. </p>
+                    </div>
+                </div>
+
+                <div className={styles.timelineCard2}>
+                    <h4 className={styles.h4Timeline}>FUSION & GROWTH</h4>
+                    <p className={styles.pTimeline}>In 2022, the company expanded its capabilities by adding fiber splicing and aerial services, strengthening its presence in the telecommunications field. During this period, the arrival of Blue Ocean's CFO marked an important moment for the organization, contributing to stronger financial structure, improved management processes, and broader opportunities for new partnerships and clients.</p>
+                    <img src="./imgs/Group 315.png" alt="" className={styles.timelineImage2}/>
+                </div>
+
+                <div className={styles.timelineCard3}>
+                    <div>
+                        <h4 className={styles.h4Timeline}>OSP UTILITIES</h4>
+                        <p className={styles.pTimeline}>In 2024, the group continued its expansion with the introduction of OSP Utilities, strengthening its services in outside plant infrastructure and utility support. This addition expanded the group’s ability to deliver integrated solutions for telecommunications networks, construction projects, and infrastructure development.</p>
+                    </div>
+                    <div>
+                        <img src="./imgs/Logo Magellan.png" alt="" className={styles.timelineImage3}/>
+                    </div>
+                </div>
+
+                <div className={styles.timelineCard4}>
+                    <h4 className={styles.h4Timeline}>MAGELLAN GROUP TODAY</h4>
+                    <p className={styles.pTimeline}>Today, Magellan Group is composed of multiple companies operating across telecommunications, infrastructure, mechanical services, and underground construction. With continuous growth and a strong commitment to innovation and quality, the group continues to expand its impact in the industry.</p>
+                </div>
+            </div>
+            <div className={styles.containerTimelineYears}>                
+                <img src="./imgs/Anos.png" alt="" className={styles.timelineImageYears}/>
+            </div>
+
+            <div className={styles.timeline2}>
+                <div className={styles.timelineCard5}>
+                    <div>
+                        <img src="./imgs/AMT.png" alt="" className={styles.timelineImage1}/>
+                    </div>
+                    <div className={styles.timelineCard1Container2}>
+                        <h4 className={styles.h4Timeline}>EXPANSION OF THE BUSINESS</h4>
+                        <p className={styles.pTimeline2}>After its first year of operations, the company expanded its service portfolio by introducing directional drilling services. This strategic move allowed the team to support more complex infrastructure projects and meet the growing demands of clients. </p>
+                    </div>
+                </div>
+
+                <div className={styles.timelineCard6}>
+                    <div>
+                        <img src="./imgs/Group 314.png" alt="" className={styles.timelineImage1}/>
+                    </div>
+                    <div className={styles.timelineCard1Container2}>
+                        <h4 className={styles.h4Timeline}>NEW CAPABILITIES </h4>
+                        <p className={styles.pTimeline2}>In 2023, the group expanded its operations with the creation of A3 Mechanics. The company focuses on mechanical services for trucks and heavy equipment, as well as the manufacturing of trailers for commercial and industrial use. This new branch diversified the group’s activities.</p>
+                    </div>
+                </div>
+
+                <div className={styles.timelineCard7}>
+                    <div>
+                        <h4 className={styles.h4Timeline}>EHL UNDERGROUND SOLUTIONS</h4>
+                    </div>
+                    <div className={styles.timelineEHL}>
+                        <img src="./imgs/EHL.png" alt="" className={styles.ehlImage}/>
+                        <p className={styles.pTimeline2}>In 2025, the Magellan Group introduced EHL Underground Solutions, a company focused on innovative underground construction services. EHL specializes in excavation, infrastructure development, sanitation systems, energy networks, and telecommunications installations, strengthening the group’s capabilities in large-scale infrastructure projects.</p>
+                    </div>
                 </div>
             </div>
         </>

@@ -478,7 +478,7 @@
     width: 70%;
 }
 
-.pTimeline{
+.pTimelineTitle{
     color: var(--grey);
     padding: 1vh 2vw;
     width: 70%;
@@ -486,4 +486,98 @@
 
 .timelineImg{
     width: 55vw;
+}
+
+.timeline1{
+    display: flex;
+    align-items: center;
+    margin: 2vh 7vw;
+}
+
+.timelineCard1, .timelineCard3, .timelineCard4, .timelineCard5{
+    margin: 0 2vw;
+}
+
+.timelineCard1, .timelineCard3, .timelineCard5, .timelineCard6{
+    display: flex;
+    align-items: center;
+}
+
+.timelineImage1, .timelineImage3{
+    height: 10vh;
+}
+
+.h4Timeline{
+    color: var(--blue);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.spanTimeline{
+    color: var(--grey);
+}
+
+.pTimeline{
+    font-size: 12px;
+    color: var(--grey);
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+.timelineCard1Container2{
+    margin-left: 2vw;
+}
+
+.timelineCard2{
+    display: flex;
+    flex-direction: column;
+}
+
+.timelineImage2{
+    width: 50%;
+}
+
+.containerTimelineYears{
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.timelineImageYears{
+    width: 90%;
+}
+
+.timeline2{
+    display: flex;
+    justify-content: right;
+    padding-left: 10vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.timelineEHL{
+    display: flex;
+}
+
+.pTimelineCard7{
+    width: 25%;
+    font-size: 12px;
+    color: var(--grey);
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+.ehlImage{
+    width: 7vw;
+}
+
+.pTimeline2{
+    font-size: 12px;
+    color: var(--grey);
+    text-align: left;
+    margin-bottom: 2vh;
+    width: 40%;
 }
