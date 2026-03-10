@@ -1,4 +1,4 @@
-.container{
+.container {
     height: 100vh;
 
     background-image: url("/imgs/Banner.png");
@@ -9,7 +9,7 @@
     color: var(--white);
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,20 +17,20 @@
     padding-top: 20vh;
 }
 
-.spanBanner{
-    background-color: #D9D9D95E ;
+.spanBanner {
+    background-color: #D9D9D95E;
     padding: 1vh 4vw;
     border-radius: 50px;
     font-size: 18px;
 }
 
-.h1{
+.h1 {
     font-size: 90px;
     width: 50%;
     margin: 3vh 0;
 }
 
-.pBanner{
+.pBanner {
     font-size: 32px;
     width: 40%;
 }
@@ -56,12 +56,10 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transition: 0.6s;
 }
 
@@ -73,7 +71,7 @@
     transform: translateY(-6px);
 }
 
-.containerCompanies{
+.containerCompanies {
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -82,7 +80,7 @@
     text-align: center;
 }
 
-.span{
+.span {
     color: var(--white);
     background-color: var(--green);
     font-size: 16px;
@@ -93,7 +91,7 @@
     font-weight: bold;
 }
 
-.h3{
+.h3 {
     font-size: 42px;
     color: var(--dark-blue);
     margin: 2vh 0;
@@ -102,24 +100,24 @@
     font-weight: 700;
 }
 
-.pCompanies{
+.pCompanies {
     font-size: 22px;
     width: 50%;
     color: var(--grey);
 }
 
-.containerImages{
+.containerImages {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 5vh 0; 
+    padding: 5vh 0;
 }
 
-.img{
+.img {
     height: 10vh;
 }
 
-.containerText{
+.containerText {
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -147,14 +145,14 @@
     object-fit: cover;
 }
 
-.pAbout{
+.pAbout {
     color: var(--dark-blue);
     font-size: 22px;
     width: 75%;
     margin-bottom: 2vh;
 }
 
-.containerList{
+.containerList {
     display: flex;
     background-color: var(--light-grey);
     width: 60%;
@@ -165,17 +163,17 @@
     padding: 2vh 3vw;
 }
 
-.list{
+.list {
     list-style: none;
     color: var(--dark-blue);
     font-weight: bold;
 }
 
-.listItem{
+.listItem {
     margin: 1.5vh;
 }
 
-.aboutContact{
+.aboutContact {
     display: flex;
     width: 100%;
     align-items: center;
@@ -202,12 +200,10 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transition: 0.6s;
 }
 
@@ -219,23 +215,23 @@
     transform: translateY(-6px);
 }
 
-.aboutNumber{
+.aboutNumber {
     margin-left: 10vw;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.spanQuestions{
+.spanQuestions {
     color: var(--dark-blue);
     font-weight: bold;
 }
 
-.spanNumber{
+.spanNumber {
     color: var(--grey);
 }
 
-.containerStatus{
+.containerStatus {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -248,7 +244,7 @@
     background-repeat: no-repeat;
 }
 
-.statusCard{
+.statusCard {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -259,15 +255,15 @@
     border-radius: 15px;
 }
 
-.statusCardTitle{
+.statusCardTitle {
     font-size: 32px;
 }
 
-.statusCardText{
+.statusCardText {
     font-size: 18px;
 }
 
-.containerServices{
+.containerServices {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -352,12 +348,10 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transition: 0.6s;
 }
 
@@ -369,49 +363,49 @@
     transform: translateY(-6px);
 }
 
-.containerMeet{
+.containerMeet {
     display: flex;
     margin: 15vh 0;
 }
 
-.meetImage{
+.meetImage {
     width: 50%;
     text-align: center;
 }
 
-.imageMeet{
+.imageMeet {
     width: 60%;
 }
 
-.meetText{
+.meetText {
     width: 50%;
 }
 
-.containerSpan{
+.containerSpan {
     display: flex;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
     margin: 2vh 0;
 }
 
-.spanMeet{
+.spanMeet {
     text-transform: uppercase;
     font-size: 18px;
 }
 
-.line{
+.line {
     width: 80px;
     height: 6px;
     background: var(--blue);
 }
 
-.h3Meet{
+.h3Meet {
     font-size: 48px;
     width: 70%;
     margin: 2vh 0;
 }
 
-.pMeet{
+.pMeet {
     font-size: 24px;
     color: var(--grey);
     width: 65%;
@@ -440,12 +434,10 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transition: 0.6s;
 }
 
@@ -457,57 +449,64 @@
     transform: translateY(-6px);
 }
 
-.containerTimelineText{
+.containerTimelineText {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5vh 10vw;
 }
 
-.containerTimelineInfo{
+.containerTimelineInfo {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
 
-.imgLogoTimeline{
+.imgLogoTimeline {
     width: 50%;
 }
 
-.imgTitleTimeline{
+.imgTitleTimeline {
     width: 70%;
 }
 
-.pTimelineTitle{
+.pTimelineTitle {
     color: var(--grey);
     padding: 1vh 2vw;
     width: 70%;
 }
 
-.timelineImg{
+.timelineImg {
     width: 55vw;
 }
 
-.timeline1{
+.timeline1 {
     display: flex;
     align-items: center;
     margin: 2vh 7vw;
 }
 
-.timelineCard1, .timelineCard3, .timelineCard4, .timelineCard5{
+.timelineCard1,
+.timelineCard3,
+.timelineCard4,
+.timelineCard5 {
     margin: 0 2vw;
 }
 
-.timelineCard1, .timelineCard3, .timelineCard5, .timelineCard6{
+.timelineCard1,
+.timelineCard3,
+.timelineCard5,
+.timelineCard6 {
     display: flex;
     align-items: center;
 }
 
-.timelineImage1, .timelineImage3{
+.timelineImage1,
+.timelineImage3 {
     height: 10vh;
 }
 
-.h4Timeline{
+.h4Timeline {
     color: var(--blue);
     text-transform: uppercase;
     font-weight: bold;
@@ -516,41 +515,41 @@
     padding-bottom: 10px;
 }
 
-.spanTimeline{
+.spanTimeline {
     color: var(--grey);
 }
 
-.pTimeline{
+.pTimeline {
     font-size: 12px;
     color: var(--grey);
     text-align: left;
     margin-bottom: 2vh;
 }
 
-.timelineCard1Container2{
+.timelineCard1Container2 {
     margin-left: 2vw;
 }
 
-.timelineCard2{
+.timelineCard2 {
     display: flex;
     flex-direction: column;
 }
 
-.timelineImage2{
+.timelineImage2 {
     width: 50%;
 }
 
-.containerTimelineYears{
+.containerTimelineYears {
     display: flex;
     align-items: center;
     padding-left: 2vw;
 }
 
-.timelineImageYears{
+.timelineImageYears {
     width: 90%;
 }
 
-.timeline2{
+.timeline2 {
     display: flex;
     justify-content: right;
     padding-left: 10vw;
@@ -558,11 +557,11 @@
     margin-bottom: 5vh;
 }
 
-.timelineEHL{
+.timelineEHL {
     display: flex;
 }
 
-.pTimelineCard7{
+.pTimelineCard7 {
     width: 25%;
     font-size: 12px;
     color: var(--grey);
@@ -570,14 +569,187 @@
     margin-bottom: 2vh;
 }
 
-.ehlImage{
+.ehlImage {
     width: 7vw;
 }
 
-.pTimeline2{
+.pTimeline2 {
     font-size: 12px;
     color: var(--grey);
     text-align: left;
     margin-bottom: 2vh;
     width: 40%;
+}
+
+@media (max-width: 1024px) {
+
+    .h1 {
+        font-size: 60px;
+        width: 80%;
+    }
+
+    .pBanner {
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .containerImages {
+        flex-wrap: wrap;
+        gap: 4vh;
+    }
+
+    .img {
+        height: 7vh;
+    }
+
+    .containerAbout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .containerText {
+        width: 90%;
+        align-items: center;
+    }
+
+    .pAbout {
+        width: 100%;
+    }
+
+    .containerList {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .containerAboutImage img {
+        width: 80%;
+        height: auto;
+        margin-top: 4vh;
+    }
+
+    .aboutContact {
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .aboutNumber {
+        margin-left: 0;
+    }
+
+    .containerMeet {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .meetImage {
+        width: 100%;
+    }
+
+    .imageMeet {
+        width: 70%;
+    }
+
+    .meetText {
+        width: 90%;
+    }
+
+    .h3Meet {
+        width: 100%;
+    }
+
+    .pMeet {
+        width: 100%;
+    }
+
+    .containerTimelineText {
+        flex-direction: column;
+    }
+
+    .containerTimelineInfo {
+        width: 90%;
+        text-align: center;
+    }
+
+    .timeline1,
+    .timeline2,
+    .timelineImg {
+        display: none;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .text {
+        padding-top: 15vh;
+    }
+
+    .h1 {
+        font-size: 42px;
+        width: 90%;
+    }
+
+    .pBanner {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .linkBanner {
+        font-size: 18px;
+    }
+
+    .h3 {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .pCompanies {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .servicesCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceCard {
+        width: 90%;
+    }
+
+    .serviceImage img {
+        height: 220px;
+    }
+
+    .serviceContent {
+        width: 90%;
+    }
+
+    .containerStatus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statusCard {
+        width: 80%;
+    }
+
+    .containerMeet {
+        margin: 10vh 0;
+    }
+
+    .imageMeet {
+        width: 90%;
+    }
+
+    .timeline1,
+    .timeline2,
+    .timelineImg,
+    .containerTimelineYears {
+        display: none;
+    }
+
 }

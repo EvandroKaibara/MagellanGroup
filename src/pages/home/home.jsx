@@ -1,11 +1,22 @@
 import { Link } from "react-router-dom";
 import styles from './home.module.css'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export const Home = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true 
+        });
+    }, []);
+
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.text}>
+                <div className={styles.text} data-aos="fade-up">
                     <span className={styles.spanBanner}>• Magellan Group •</span>
                     <h1 className={styles.h1}>Building the Future of Utility Infrastructure</h1>
                     <p className={styles.pBanner}>We deliver reliable solutions with safety, efficiency, and excellence in every project.</p>
@@ -13,13 +24,13 @@ export const Home = () => {
                 </div>
 
             </div>
-            
-            <div className={styles.containerCompanies}>
+
+            <div className={styles.containerCompanies} data-aos="fade-up">
                 <span className={styles.span}>Our Services</span>
                 <h3 className={styles.h3}>Our Companies</h3>
                 <p className={styles.pCompanies}>Below we present the companies that are part of the Magellan Group, with excellent and quality services.</p>
             </div>
-            <div className={styles.containerImages}>
+            <div className={styles.containerImages} data-aos="zoom-in">
                 <img src="/imgs/Magellan Group.png" alt="Magellan Group" className={styles.img} />
                 <img src="/imgs/AMT.png" alt="AMT Business" className={styles.img} />
                 <img src="/imgs/Magellan UC.png" alt="Magellan UC" className={styles.img} />
@@ -29,7 +40,7 @@ export const Home = () => {
             </div>
 
             <div className={styles.sectionAbout}>
-                <div className={styles.containerAbout}>
+                <div className={styles.containerAbout} data-aos="fade-right">
                     <div className={styles.containerText}>
                         <span className={styles.span}>About Magellan</span>
                         <h3 className={styles.h3}>Reliable Infrastructure Solutions</h3>
@@ -86,7 +97,7 @@ export const Home = () => {
             </div>
 
             <div className={styles.servicesCards}>
-                <div className={styles.serviceCard}>
+                <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="200">
                     <div className={styles.serviceImage}>
                         <img src="/imgs/FiberPulling.png" alt="Fiber Pulling" />
                     </div>
@@ -101,7 +112,7 @@ export const Home = () => {
                     </div>
                 </div>
 
-                <div className={styles.serviceCard}>
+                <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="200">
                     <div className={styles.serviceImage}>
                         <img src="/imgs/DirectionalDrilling.png" alt="Directional Drilling" />
                     </div>
@@ -116,7 +127,7 @@ export const Home = () => {
                     </div>
                 </div>
 
-                <div className={styles.serviceCard}>
+                <div className={styles.serviceCard} data-aos="fade-up" data-aos-delay="200">
                     <div className={styles.serviceImage}>
                         <img src="/imgs/SplicingTesting.png" alt="Splicing & Testing" />
                     </div>
@@ -132,7 +143,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className={styles.containerMeet}>
+            <div className={styles.containerMeet} data-aos="fade-up">
                 <div className={styles.meetImage}>
                     <img src="./imgs/Meet.png" alt="" className={styles.imageMeet} />
                 </div>
@@ -150,19 +161,19 @@ export const Home = () => {
 
             <div className={styles.containerTimelineText}>
                 <div className={styles.containerTimelineInfo}>
-                    <img src="./imgs/Logo Magellan Group.png" alt="" className={styles.imgLogoTimeline}/>
-                    <img src="./imgs/Titulo.png" alt="" className={styles.imgTitleTimeline}/>
+                    <img src="./imgs/Logo Magellan Group.png" alt="" className={styles.imgLogoTimeline} />
+                    <img src="./imgs/Titulo.png" alt="" className={styles.imgTitleTimeline} />
                     <p className={styles.pTimelineTitle}>The creation of Magellan Group allowed businesses and communities to build the future together, just as its founders had always envisioned. This is the story of how their union revolutionized the infrastructure and construction sector in Florida.</p>
                 </div>
                 <div>
-                    <img src="./imgs/Foto.png" alt="" className={styles.timelineImg}/>
+                    <img src="./imgs/Foto.png" alt="" className={styles.timelineImg} />
                 </div>
             </div>
 
-            <div className={styles.timeline1}>
+            <div className={styles.timeline1} data-aos="fade-up">
                 <div className={styles.timelineCard1}>
                     <div>
-                        <img src="./imgs/AMT.png" alt="" className={styles.timelineImage1}/>
+                        <img src="./imgs/AMT.png" alt="" className={styles.timelineImage1} />
                     </div>
                     <div className={styles.timelineCard1Container2}>
                         <h4 className={styles.h4Timeline}>THE BEGGINING <br /><span className={styles.spanTimeline}>OF EVERYTHING</span></h4>
@@ -173,7 +184,7 @@ export const Home = () => {
                 <div className={styles.timelineCard2}>
                     <h4 className={styles.h4Timeline}>FUSION & GROWTH</h4>
                     <p className={styles.pTimeline}>In 2022, the company expanded its capabilities by adding fiber splicing and aerial services, strengthening its presence in the telecommunications field. During this period, the arrival of Blue Ocean's CFO marked an important moment for the organization, contributing to stronger financial structure, improved management processes, and broader opportunities for new partnerships and clients.</p>
-                    <img src="./imgs/Group 315.png" alt="" className={styles.timelineImage2}/>
+                    <img src="./imgs/Group 315.png" alt="" className={styles.timelineImage2} />
                 </div>
 
                 <div className={styles.timelineCard3}>
@@ -182,7 +193,7 @@ export const Home = () => {
                         <p className={styles.pTimeline}>In 2024, the group continued its expansion with the introduction of OSP Utilities, strengthening its services in outside plant infrastructure and utility support. This addition expanded the group’s ability to deliver integrated solutions for telecommunications networks, construction projects, and infrastructure development.</p>
                     </div>
                     <div>
-                        <img src="./imgs/Logo Magellan.png" alt="" className={styles.timelineImage3}/>
+                        <img src="./imgs/Logo Magellan.png" alt="" className={styles.timelineImage3} />
                     </div>
                 </div>
 
@@ -191,14 +202,14 @@ export const Home = () => {
                     <p className={styles.pTimeline}>Today, Magellan Group is composed of multiple companies operating across telecommunications, infrastructure, mechanical services, and underground construction. With continuous growth and a strong commitment to innovation and quality, the group continues to expand its impact in the industry.</p>
                 </div>
             </div>
-            <div className={styles.containerTimelineYears}>                
-                <img src="./imgs/Anos.png" alt="" className={styles.timelineImageYears}/>
+            <div className={styles.containerTimelineYears} data-aos="fade-up">
+                <img src="./imgs/Anos.png" alt="" className={styles.timelineImageYears} />
             </div>
 
-            <div className={styles.timeline2}>
+            <div className={styles.timeline2} data-aos="fade-up">
                 <div className={styles.timelineCard5}>
                     <div>
-                        <img src="./imgs/AMT.png" alt="" className={styles.timelineImage1}/>
+                        <img src="./imgs/AMT.png" alt="" className={styles.timelineImage1} />
                     </div>
                     <div className={styles.timelineCard1Container2}>
                         <h4 className={styles.h4Timeline}>EXPANSION OF THE BUSINESS</h4>
@@ -208,7 +219,7 @@ export const Home = () => {
 
                 <div className={styles.timelineCard6}>
                     <div>
-                        <img src="./imgs/Group 314.png" alt="" className={styles.timelineImage1}/>
+                        <img src="./imgs/Group 314.png" alt="" className={styles.timelineImage1} />
                     </div>
                     <div className={styles.timelineCard1Container2}>
                         <h4 className={styles.h4Timeline}>NEW CAPABILITIES </h4>
@@ -221,7 +232,7 @@ export const Home = () => {
                         <h4 className={styles.h4Timeline}>EHL UNDERGROUND SOLUTIONS</h4>
                     </div>
                     <div className={styles.timelineEHL}>
-                        <img src="./imgs/EHL.png" alt="" className={styles.ehlImage}/>
+                        <img src="./imgs/EHL.png" alt="" className={styles.ehlImage} />
                         <p className={styles.pTimeline2}>In 2025, the Magellan Group introduced EHL Underground Solutions, a company focused on innovative underground construction services. EHL specializes in excavation, infrastructure development, sanitation systems, energy networks, and telecommunications installations, strengthening the group’s capabilities in large-scale infrastructure projects.</p>
                     </div>
                 </div>
