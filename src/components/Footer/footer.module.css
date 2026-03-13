@@ -146,3 +146,97 @@ footer{
     justify-content: space-between;
     font-weight: bold;
 }
+
+@media (max-width: 1024px){
+
+    footer{
+        padding: 5vh 6vw;
+    }
+
+    .h5{
+        font-size: 30px;
+    }
+
+    .spanTitle{
+        font-size: 30px;
+    }
+
+    .footerItems{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .pItem1{
+        width: 100%;
+    }
+
+    .spanLocation{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .title{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .h5{
+        font-size: 26px;
+    }
+
+    .spanTitle{
+        font-size: 26px;
+    }
+
+    .footerItems{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .item2,
+    .item3{
+        margin-right: 0;
+    }
+
+    .inputContainer{
+        max-width: 100%;
+    }
+
+    .copyright{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .h5{
+        font-size: 22px;
+    }
+
+    .spanTitle{
+        font-size: 22px;
+    }
+
+    .linkTitle{
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+
+    .input{
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .button{
+        padding: 16px 18px;
+        font-size: 16px;
+    }
+
+}
