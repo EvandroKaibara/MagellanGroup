@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 16vh;
     padding-bottom: 10vh;
 }
 
@@ -111,8 +111,10 @@
 .containerImages {
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    padding: 5vh 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 8vw;
+    box-sizing: border-box;
 }
 
 .img {
@@ -133,8 +135,12 @@
 
 .containerAbout {
     display: flex;
+    align-items: center;
+    gap: 4vw;
     max-width: 1600px;
     margin: 0 auto;
+    padding: 0 10vw;
+    box-sizing: border-box;
 }
 
 .containerText,
@@ -179,12 +185,12 @@
     display: flex;
     width: 100%;
     align-items: center;
+    margin-top: 3vh;
 }
 
 .linkAbout {
     position: relative;
     overflow: hidden;
-    margin-top: 3vh;
     text-decoration: none;
     color: var(--white);
     background-color: var(--blue);
@@ -237,8 +243,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    box-sizing: border-box;
     justify-content: center;
-    padding: 10vh 0;
+    gap: 3vh 2vw;
+    padding: 10vh 10vw;
     margin: 10vh 0;
 
     background-image: url("/imgs/StatusBackground.png");
@@ -253,8 +261,11 @@
     text-align: center;
     color: var(--white);
     background-color: #00070A57;
-    margin: 2vh 3vw;
-    padding: 2vh;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+    max-width: 300px;
+    justify-content: center;
+    padding: 3vh 2vh;
     border-radius: 15px;
 }
 
@@ -297,7 +308,8 @@
 
 .serviceContent {
     background: var(--white);
-    width: 85%;
+    width: 90%;
+    box-sizing: border-box;
     margin: -80px auto 0 auto;
     padding: 30px;
     border-radius: 25px;
@@ -368,6 +380,7 @@
 
 .containerMeet {
     display: flex;
+    align-items: center;
     margin: 15vh 0;
 }
 
@@ -807,18 +820,15 @@
         height: 220px;
     }
 
-    .serviceContent {
-        width: 90%;
-        box-sizing: border-box;
-    }
-
     .containerStatus {
         flex-direction: column;
         align-items: center;
+        padding: 10vh 8vw;
     }
 
     .statusCard {
-        width: 80%;
+        width: 100%;
+        flex: none;
     }
 
     .containerMeet {
