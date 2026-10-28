@@ -35,7 +35,7 @@
 .containerContact{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 4vw;
     padding: 0 8vw 10vh 8vw;
 }
@@ -81,11 +81,15 @@
 
 .imageArea{
     flex: 1;
+    position: relative;
+    min-height: 50vh;
 }
 
 .imageArea img{
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -137,8 +141,8 @@
         gap: 40px;
     }
 
-    .imageArea img{
-        height: 40vh;
+    .imageArea{
+        min-height: 40vh;
     }
 
     .meet{
@@ -197,7 +201,7 @@
         width: 100%;
     }
 
-    .imageArea img{
+    .imageArea{
         display: none;
     }
 
