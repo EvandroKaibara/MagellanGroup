@@ -60,7 +60,9 @@
 .containerAlexandre,
 .containerHarley {
     display: flex;
-    padding: 0 20vw;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 15vw;
     margin-bottom: 20vh;
 }
 
@@ -69,13 +71,13 @@
     width: 50%;
 }
 
-.imgAlexandre {
-    height: 70vh;
-}
-
+.imgAlexandre,
 .imgHarley {
-    height: 70vh;
-    margin-left: 35px;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .textAlexandre,
