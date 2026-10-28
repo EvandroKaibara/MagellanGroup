@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    min-height: 100vh;
 
     background-image: url("/imgs/Banner.png");
     background-size: cover;
@@ -15,6 +15,7 @@
     align-items: center;
     text-align: center;
     padding-top: 20vh;
+    padding-bottom: 10vh;
 }
 
 .spanBanner {
@@ -72,7 +73,8 @@
 }
 
 .containerCompanies {
-    height: 20vh;
+    min-height: 20vh;
+    padding: 5vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,6 +235,7 @@
 
 .containerStatus {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     padding: 10vh 0;
@@ -483,6 +486,7 @@
 .timeline1 {
     display: flex;
     align-items: center;
+    gap: 1vw;
     margin: 2vh 7vw;
 }
 
@@ -526,8 +530,21 @@
     margin-bottom: 2vh;
 }
 
+.timelineCard1,
+.timelineCard2,
+.timelineCard3,
+.timelineCard4,
+.timelineCard5,
+.timelineCard6,
+.timelineCard7 {
+    flex: 1;
+    min-width: 0;
+}
+
 .timelineCard1Container2 {
     margin-left: 2vw;
+    flex: 1;
+    min-width: 0;
 }
 
 .timelineCard2 {
@@ -551,14 +568,16 @@
 
 .timeline2 {
     display: flex;
-    justify-content: right;
-    padding-left: 10vw;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 7vw;
     margin-top: 2vh;
     margin-bottom: 5vh;
 }
 
 .timelineEHL {
     display: flex;
+    gap: 1vw;
 }
 
 .pTimelineCard7 {
@@ -571,6 +590,8 @@
 
 .ehlImage {
     width: 7vw;
+    flex-shrink: 0;
+    align-self: flex-start;
 }
 
 .pTimeline2 {
@@ -578,7 +599,23 @@
     color: var(--grey);
     text-align: left;
     margin-bottom: 2vh;
-    width: 40%;
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+
+    .timelineCard1,
+    .timelineCard3,
+    .timelineCard5,
+    .timelineCard6 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timelineCard1Container2 {
+        margin-left: 0;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -655,6 +692,10 @@
         width: 90%;
     }
 
+    .containerSpan {
+        justify-content: center;
+    }
+
     .h3Meet {
         width: 100%;
     }
@@ -669,12 +710,54 @@
 
     .containerTimelineInfo {
         width: 90%;
+        align-items: center;
         text-align: center;
     }
 
-    .timeline1,
-    .timeline2,
+    .pTimelineTitle {
+        width: 100%;
+    }
+
     .timelineImg {
+        width: 90vw;
+    }
+
+    .timeline1,
+    .timeline2 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4vh;
+        margin: 4vh 8vw;
+        padding: 0;
+    }
+
+    .timelineCard1,
+    .timelineCard3,
+    .timelineCard4,
+    .timelineCard5 {
+        margin: 0;
+    }
+
+    .timelineImage2 {
+        width: 30%;
+    }
+
+    .pTimeline,
+    .pTimeline2 {
+        font-size: 14px;
+    }
+
+    .timelineEHL {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .ehlImage {
+        width: 25vw;
+        min-width: 100px;
+    }
+
+    .containerTimelineYears {
         display: none;
     }
 
@@ -726,6 +809,7 @@
 
     .serviceContent {
         width: 90%;
+        box-sizing: border-box;
     }
 
     .containerStatus {
@@ -745,11 +829,33 @@
         width: 90%;
     }
 
-    .timeline1,
-    .timeline2,
-    .timelineImg,
-    .containerTimelineYears {
-        display: none;
+    .h3Meet {
+        font-size: 32px;
+    }
+
+    .pMeet {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .h1 {
+        font-size: 34px;
+    }
+
+    .h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .h3Meet {
+        font-size: 26px;
+    }
+
+    .statusCardTitle {
+        font-size: 26px;
     }
 
 }
